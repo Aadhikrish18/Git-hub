@@ -109,3 +109,15 @@ git diff:
     [main 5db190e] feat : added a css file
     1 file changed, 0 insertions(+), 0 deletions(-)
     create mode 100644 Style.css
+
+git restore:                        // if wrongly added lines on a diff branch and commited it.
+
+    git reset Git_Notes.txt
+        Unstaged changes after reset:
+        M       Git_Notes.txt
+    
+    git restore Git_Notes.txt
+
+    PS D:\Git hub\Git-hub> git status
+        On branch GitCheatSheet
+        nothing to commit, working tree clean
