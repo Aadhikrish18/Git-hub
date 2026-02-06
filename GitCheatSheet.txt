@@ -1,0 +1,58 @@
+Git init : 
+	Creating git enviroinment in our local repository.
+
+Git clone:
+	
+	D:***:\git clone https://github.com/Aadhikrish18/Git-hub.git
+	
+	Configure github:
+	git config --global user.name "Aadhikrish18"
+	git config --global user.email "aadhikrish185@gmail.com"
+					
+git add:
+    cd Git-hub
+    git add .\Git_Notes.txt		                //putting the letter inside the envolope is "add" 								 
+                                        
+git commit:                                                        
+    git commit -m "feat : added git notes"      //writting th To address is "commit"	
+
+git push:										//to push the file to online repo. 
+    git push                                    //commited files only send to online repo via "push"
+
+git pull:										//to pull the file from online repo
+    git pull
+
+git status:                                     //to check the status of the files is commited/staged or not
+    git status
+
+git diff:
+    git diff                                    //to get diff b/w commited file and the same modified file.
+
+git branch:
+    git branch                                  //list branch
+        * main
+
+    git checkout -b "GitCheatSheet"             //-b = new branch
+        Switched to a new branch 'GitCheatSheet'
+
+    git checkout main                           //checkout = move to other branch
+        Switched to branch 'main'
+        Your branch is up to date with 'origin/main'.
+
+    git add .\GitCheatSheet.txt                 //created a file after opened a new branch    
+
+    git commit -m "feat : created cheat sheed"
+
+    git push origin GitCheatSheet                //mentioning which branch to be pushed
+
+git restore:                                     //if wrongly added lines on a diff branch and commited it.
+
+    git reset Git_Notes.txt
+        Unstaged changes after reset:
+        M       Git_Notes.txt
+    
+    git restore Git_Notes.txt                   //if commits still presents, restore to before changes added state        
+
+    PS D:\Git hub\Git-hub> git status
+        On branch GitCheatSheet
+        nothing to commit, working tree clean    
