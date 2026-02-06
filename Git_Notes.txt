@@ -140,6 +140,36 @@ git branch:
     PS D:\Git hub\Git-hub> git add .\GitCheatSheet.txt
 
     PS D:\Git hub\Git-hub> git commit -m "feat : created cheat sheed"
+        //ones you are in new branch, Create a new file add some lines and save
+git branch:
+    PS D:\Git hub\Git-hub> git branch
+    * main
+
+    PS D:\Git hub\Git-hub> git checkout -b "GitCheatSheet"
+    Switched to a new branch 'GitCheatSheet'
+
+    PS D:\Git hub\Git-hub> git branch
+    * GitCheatSheet
+    main
+
+    PS D:\Git hub\Git-hub> git checkout main
+    Switched to branch 'main'
+    Your branch is up to date with 'origin/main'.
+
+    PS D:\Git hub\Git-hub> git branch
+    GitCheatSheet
+    * main
+
+    PS D:\Git hub\Git-hub> git checkout GitCheatSheet
+    Switched to branch 'GitCheatSheet'
+    
+    PS D:\Git hub\Git-hub> git branch
+    * GitCheatSheet
+    main
+
+    PS D:\Git hub\Git-hub> git add .\GitCheatSheet.txt
+
+    PS D:\Git hub\Git-hub> git commit -m "feat : created cheat sheed"  //not mentioned which branch to be pushed
 
         [GitCheatSheet 264d87c] feat : created cheat sheed
         1 file changed, 29 insertions(+)
@@ -149,6 +179,7 @@ git branch:
         To push the current branch and set the remote as upstream, use
 
             git push --set-upstream origin GitCheatSheet                    //need to mention which branch to be pushed
+            git push --set-upstream origin GitCheatSheet                    //error: branch not mentiones
 
         To have this happen automatically for branches without a tracking
         upstream, see 'push.autoSetupRemote' in 'git help config'.
@@ -166,3 +197,18 @@ git branch:
         remote:
         To https://github.com/Aadhikrish18/Git-hub.git
         * [new branch]      GitCheatSheet -> GitCheatSheet
+        * [new branch]      GitCheatSheet -> GitCheatSheet
+
+
+git restore:                        // if wrongly added lines on a diff branch and commited it.
+
+    git reset Git_Notes.txt
+        Unstaged changes after reset:
+        M       Git_Notes.txt
+    
+    git restore Git_Notes.txt
+
+    PS D:\Git hub\Git-hub> git status
+        On branch GitCheatSheet
+        nothing to commit, working tree clean
+        
