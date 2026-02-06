@@ -110,6 +110,39 @@ git diff:
     1 file changed, 0 insertions(+), 0 deletions(-)
     create mode 100644 Style.css
 
+        //ones you are in new branch, Create a new file add some lines and save
+
+    PS D:\Git hub\Git-hub> git add .\GitCheatSheet.txt
+
+    PS D:\Git hub\Git-hub> git commit -m "feat : created cheat sheed"  //not mentioned which branch to be pushed
+
+        [GitCheatSheet 264d87c] feat : created cheat sheed
+        1 file changed, 29 insertions(+)
+        create mode 100644 GitCheatSheet.txt
+        PS D:\Git hub\Git-hub> git push
+        fatal: The current branch GitCheatSheet has no upstream branch.
+        To push the current branch and set the remote as upstream, use
+
+            git push --set-upstream origin GitCheatSheet                    //error: branch not mentiones
+
+        To have this happen automatically for branches without a tracking
+        upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+    PS D:\Git hub\Git-hub> git push origin GitCheatSheet                //mentioning which branch to be pushed
+        Enumerating objects: 4, done.
+        Counting objects: 100% (4/4), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (3/3), done.
+        Writing objects: 100% (3/3), 788 bytes | 788.00 KiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+        remote:
+        remote: Create a pull request for 'GitCheatSheet' on GitHub by visiting:
+        remote:      https://github.com/Aadhikrish18/Git-hub/pull/new/GitCheatSheet
+        remote:
+        To https://github.com/Aadhikrish18/Git-hub.git
+        * [new branch]      GitCheatSheet -> GitCheatSheet
+
+
 git restore:                        // if wrongly added lines on a diff branch and commited it.
 
     git reset Git_Notes.txt
@@ -121,3 +154,4 @@ git restore:                        // if wrongly added lines on a diff branch a
     PS D:\Git hub\Git-hub> git status
         On branch GitCheatSheet
         nothing to commit, working tree clean
+        
