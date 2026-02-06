@@ -111,6 +111,31 @@ git diff:
     create mode 100644 Style.css
 
         //ones you are in new branch, Create a new file add some lines and save
+git branch:
+    PS D:\Git hub\Git-hub> git branch
+    * main
+
+    PS D:\Git hub\Git-hub> git checkout -b "GitCheatSheet"
+    Switched to a new branch 'GitCheatSheet'
+
+    PS D:\Git hub\Git-hub> git branch
+    * GitCheatSheet
+    main
+
+    PS D:\Git hub\Git-hub> git checkout main
+    Switched to branch 'main'
+    Your branch is up to date with 'origin/main'.
+
+    PS D:\Git hub\Git-hub> git branch
+    GitCheatSheet
+    * main
+
+    PS D:\Git hub\Git-hub> git checkout GitCheatSheet
+    Switched to branch 'GitCheatSheet'
+    
+    PS D:\Git hub\Git-hub> git branch
+    * GitCheatSheet
+    main
 
     PS D:\Git hub\Git-hub> git add .\GitCheatSheet.txt
 
