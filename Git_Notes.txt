@@ -234,5 +234,4 @@ Git merge:                          // give merger req from sub branch and accep
     * branch            main       -> FETCH_HEAD
     Already up to date.
 
-Git conflict:
-                
+Git conflict:                        //occurs if in main and sub branch added a line of code on same line    
