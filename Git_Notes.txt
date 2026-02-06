@@ -1,0 +1,49 @@
+Git init : 
+	creating git enviroinment in our local repository.
+
+Git clone:
+	creating link between local repository to online repository.
+	
+	Open the folder you wanna link and open command prompt from there, then copy the online repo link.
+	
+	D:***:\git clone https://github.com/Aadhikrish18/Git-hub.git
+	
+	Configure github:
+	git config --global user.name "Aadhikrish18"
+	git config --global user.email "aadhikrish185@gmail.com"
+
+	There should be a folder similar to online repo name, my case "Git-hub"	.
+	
+	inside the Git-hub folder there must be a .git hidden folder.
+	.git ? 
+		conn b/w your online & local repo
+		dont delete this folder.
+	
+	am gonna create a folder with vscode.
+		
+		
+Staging & Unstaging:
+		git add filename
+		prepares files to stage
+		if commit files will be staged
+		can unstage the mistaken file.
+		if push files goes to online repo
+		
+	Staging->	
+		PS D:\Git hub> cd Git-hub
+		
+git add:
+		PS D:\Git hub\Git-hub> git add .\Git_Notes.txt		//putting the letter inside the envolope is "add"
+		PS D:\Git hub\Git-hub>								//writting th To address is "commit" 
+															//commited files only send to online repo via "push"
+															//by using the to address with date & time "commit hash number" will generated.
+															//"git reset" - to unstage the mistaken file.
+															
+		PS D:\Git hub\Git-hub> git commit -m "feat : added git notes"
+		[main (root-commit) e69b447] feat : added git notes
+		 1 file changed, 0 insertions(+), 0 deletions(-)
+		 create mode 100644 Git_Notes.txt
+		PS D:\Git hub\Git-hub>	
+
+git push:
+	syntax: git push orgin remote		//git clone "URL=origin"
