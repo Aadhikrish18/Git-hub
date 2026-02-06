@@ -211,4 +211,28 @@ git restore:                        // if wrongly added lines on a diff branch a
     PS D:\Git hub\Git-hub> git status
         On branch GitCheatSheet
         nothing to commit, working tree clean
-        
+
+Git merge:                          // give merger req from sub branch and accept in main branch. then pull.          
+
+    PS D:\Git hub\Git-hub> git pull
+    remote: Enumerating objects: 8, done.
+    remote: Counting objects: 100% (8/8), done.
+    remote: Compressing objects: 100% (4/4), done.
+    remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+    Unpacking objects: 100% (4/4), 2.19 KiB | 139.00 KiB/s, done.
+    From https://github.com/Aadhikrish18/Git-hub
+    a213f95..d63eab2  main          -> origin/main
+    811f43e..981ec7c  GitCheatSheet -> origin/GitCheatSheet
+    Updating a213f95..d63eab2
+    Fast-forward
+    GitCheatSheet.txt | 58 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Git_Notes.txt     | 32 ++++++++++++++++++++++++++++++
+    2 files changed, 90 insertions(+)
+    create mode 100644 GitCheatSheet.txt
+    PS D:\Git hub\Git-hub> git pull origin main
+    From https://github.com/Aadhikrish18/Git-hub
+    * branch            main       -> FETCH_HEAD
+    Already up to date.
+
+Git conflict:
+                
