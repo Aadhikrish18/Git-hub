@@ -45,7 +45,7 @@ git add:
 		 create mode 100644 Git_Notes.txt
 		PS D:\Git hub\Git-hub>	
 
-git push:
+git push:													//to push the file to online repo. 
 	syntax: git push orgin remote		//git clone "URL=origin"
     info: please complete authentication in your browser...
     PS D:\Git hub\Git-hub> git push
@@ -58,7 +58,7 @@ git push:
     To https://github.com/Aadhikrish18/Git-hub.git
     * [new branch]      main -> main
     PS D:\Git hub\Git-hub>
-git pull:
+git pull:													//to pull the file from online repo
     PS D:\Git hub\Git-hub> git pull
     remote: Enumerating objects: 5, done.
     remote: Counting objects: 100% (5/5), done.
