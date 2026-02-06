@@ -72,7 +72,7 @@ git pull:													//to pull the file from online repo
     Git_Notes.txt | 4 ++--
     1 file changed, 2 insertions(+), 2 deletions(-)
     PS D:\Git hub\Git-hub>
-git status:     // to check the status of the files is commited/staged or not
+git status:                                                // to check the status of the files is commited/staged or not
     On branch main
     Your branch is ahead of 'origin/main' by 1 commit.
     (use "git push" to publish your local commits)
