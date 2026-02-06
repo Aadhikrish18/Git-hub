@@ -58,6 +58,7 @@ git push:													//to push the file to online repo.
     To https://github.com/Aadhikrish18/Git-hub.git
     * [new branch]      main -> main
     PS D:\Git hub\Git-hub>
+
 git pull:													//to pull the file from online repo
     PS D:\Git hub\Git-hub> git pull
     remote: Enumerating objects: 5, done.
@@ -72,6 +73,7 @@ git pull:													//to pull the file from online repo
     Git_Notes.txt | 4 ++--
     1 file changed, 2 insertions(+), 2 deletions(-)
     PS D:\Git hub\Git-hub>
+
 git status:                                                // to check the status of the files is commited/staged or not
     On branch main
     Your branch is ahead of 'origin/main' by 1 commit.
@@ -109,3 +111,58 @@ git diff:
     [main 5db190e] feat : added a css file
     1 file changed, 0 insertions(+), 0 deletions(-)
     create mode 100644 Style.css
+
+git branch:
+    PS D:\Git hub\Git-hub> git branch                           // list branch
+        * main
+
+    PS D:\Git hub\Git-hub> git checkout -b "GitCheatSheet"      // -b = new branch
+        Switched to a new branch 'GitCheatSheet'
+
+    PS D:\Git hub\Git-hub> git branch
+        * GitCheatSheet
+        main
+
+    PS D:\Git hub\Git-hub> git checkout main                    // checkout = move to other branch
+        Switched to branch 'main'
+        Your branch is up to date with 'origin/main'.
+
+    PS D:\Git hub\Git-hub> git branch                           // checking weather moved or not
+        GitCheatSheet
+        * main
+
+    PS D:\Git hub\Git-hub> git checkout GitCheatSheet           // ckeckout to new branch
+        Switched to branch 'GitCheatSheet'
+        PS D:\Git hub\Git-hub> git branch
+        * GitCheatSheet
+        main
+
+    PS D:\Git hub\Git-hub> git add .\GitCheatSheet.txt
+
+    PS D:\Git hub\Git-hub> git commit -m "feat : created cheat sheed"
+
+        [GitCheatSheet 264d87c] feat : created cheat sheed
+        1 file changed, 29 insertions(+)
+        create mode 100644 GitCheatSheet.txt
+        PS D:\Git hub\Git-hub> git push
+        fatal: The current branch GitCheatSheet has no upstream branch.
+        To push the current branch and set the remote as upstream, use
+
+            git push --set-upstream origin GitCheatSheet                    //need to mention which branch to be pushed
+
+        To have this happen automatically for branches without a tracking
+        upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+    PS D:\Git hub\Git-hub> git push origin GitCheatSheet                //mentioning which branch to be pushed
+        Enumerating objects: 4, done.
+        Counting objects: 100% (4/4), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (3/3), done.
+        Writing objects: 100% (3/3), 788 bytes | 788.00 KiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+        remote:
+        remote: Create a pull request for 'GitCheatSheet' on GitHub by visiting:
+        remote:      https://github.com/Aadhikrish18/Git-hub/pull/new/GitCheatSheet
+        remote:
+        To https://github.com/Aadhikrish18/Git-hub.git
+        * [new branch]      GitCheatSheet -> GitCheatSheet
