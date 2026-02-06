@@ -1,5 +1,5 @@
 Git init : 
-	creating git enviroinment in our local repository.
+	Creating git enviroinment in our local repository.
 
 Git clone:
 	creating link between local repository to online repository.
