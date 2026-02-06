@@ -1,0 +1,29 @@
+Git init : 
+	Creating git enviroinment in our local repository.
+
+Git clone:
+	
+	D:***:\git clone https://github.com/Aadhikrish18/Git-hub.git
+	
+	Configure github:
+	git config --global user.name "Aadhikrish18"
+	git config --global user.email "aadhikrish185@gmail.com"
+					
+git add:
+    cd Git-hub
+    git add .\Git_Notes.txt		                //putting the letter inside the envolope is "add" 								 
+                                        
+git commit:                                                        
+    git commit -m "feat : added git notes"      //writting th To address is "commit"	
+
+git push:										//to push the file to online repo. 
+    git push                                    //commited files only send to online repo via "push"
+
+git pull:										//to pull the file from online repo
+    git pull
+
+git status:                                     // to check the status of the files is commited/staged or not
+    git status
+
+git diff:
+    git diff                                    // to get diff b/w commited file and the same modified file.
