@@ -92,20 +92,20 @@ git status:     // to check the status of the files is commited/staged or not
     create mode 100644 Style.css
 
 git diff:
-   On branch main
-Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
+    On branch main
+    Your branch is ahead of 'origin/main' by 1 commit.
+    (use "git push" to publish your local commits)
 
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   Style.css
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+            new file:   Style.css
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   Git_Notes.txt
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+            modified:   Git_Notes.txt
 
-PS D:\Git hub\Git-hub> git commit -m "feat : added a css file"
-[main 5db190e] feat : added a css file
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 Style.css
+    PS D:\Git hub\Git-hub> git commit -m "feat : added a css file"
+    [main 5db190e] feat : added a css file
+    1 file changed, 0 insertions(+), 0 deletions(-)
+    create mode 100644 Style.css
