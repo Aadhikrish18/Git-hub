@@ -56,3 +56,4 @@ git restore:                                     //if wrongly added lines on a d
     PS D:\Git hub\Git-hub> git status
         On branch GitCheatSheet
         nothing to commit, working tree clean    
+Git conflict:                        //checking
